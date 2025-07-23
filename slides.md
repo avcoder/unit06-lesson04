@@ -86,6 +86,7 @@ class: text-left
 
 - 🥊 [Function Component React vs Class Component React](https://www.freecodecamp.org/news/function-component-vs-class-component-in-react/)
 - 📊 [State of Devs 2025](https://2025.stateofdevs.com/en-US)
+- ⚛️ [State of React 2024](https://2024.stateofreact.com/en-US)
 - 🦮 [useState guide](https://blog.logrocket.com/guide-usestate-react/)
 
 
