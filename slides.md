@@ -16,12 +16,12 @@ transition: slide-left
 mdc: true
 ---
 
-# React: useState 
+# React: CSS Styling and Component Frameworks 
 Frontend Development: Unit 06 - Lesson 04
 
-- [ ] Props
-- [ ] useState
-- [ ] Covering gotchas
+- [ ] Various ways of styling with CSS
+- [ ] Styling with CSS Modules
+- [ ] MaterialUI + PrimeReact 
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
