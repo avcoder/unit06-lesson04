@@ -37,9 +37,38 @@ Frontend Development: Unit 06 - Lesson 04
 transition: slide-left
 ---
 
-# Recap
+# Recap / Common Gotchas
+Try the following common errors to see what errors look like in React.  Find solutions for each.
 
-- repo of where we left off: https://github.com/avcoder/test-react
+- Forgetting to `return` JSX
+- Confusing camelCase for HTML attributes `onclick vs onClick`
+- Using `class` instead of `className`
+- if using inline styles, using hyphenated names instead of camelCase 
+  - ex: `background-color vs backgroundColor`
+- Multiple top-level elements without a wrapper/fragment
+- DON'T use if statements directly inside JSX like `return ( if (isLoggedIn) { <p>Welcome</p> });`
+- Not using `key` in lists
+- JSX requires properly closed tags, even for void elements. ex: `<input /> <br />`
+- what happens if props are undefined? ex: `return (<div className={someUndefinedClass}>Hi</div>)`
+- if `numOfItems` is 0, this will render 0 `{numOfItems && <ShoppingList items={shoppingList} />}`
+
+---
+transition: slide-left
+---
+
+# Styling a React App
+
+- How did we traditionally style a website via CSS?  What was needed?
+- ChatGPT: `Discuss different ways a React website can be styled with CSS and list pros vs cons for each.`
+
+---
+transition: slide-left
+---
+
+# CSS Modules
+
+- Use CSS Modules to scope styles to individual components
+- Exercise: Re-create https://unit06-lesson02.netlify.app/4
 
 ---
 layout: image-right
@@ -66,38 +95,13 @@ class: text-left
 - 🧪 [Enter anonymous lab questions](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
 - ℹ️ [Course feedback survey](https://circuitstream.typeform.com/to/ZoyYk7px#course_id=SoftwareAN&instructor=9514)
 
-
 ---
 transition: slide-left
 ---
 
-# Common Gotchas
-Try the following common errors to see what errors look like in React.  Find solutions for each.
+# Material UI + PrimeReact
 
-- Forgetting to `return` JSX
-- Confusing camelCase for HTML attributes `onclick vs onClick`
-- Using `class` instead of `className`
-- if using inline styles, using hyphenated names instead of camelCase 
-  - ex: `background-color vs backgroundColor`
-- Multiple top-level elements without a wrapper/fragment
-- DON'T use if statements directly inside JSX like `return ( if (isLoggedIn) { <p>Welcome</p> });`
-- Not using `key` in lists
-- JSX requires properly closed tags, even for void elements. ex: `<input /> <br />`
-- what happens if props are undefined? ex: `return (<div className={someUndefinedClass}>Hi</div>)`
-- if `numOfItems` is 0, this will render 0 `{numOfItems && <ShoppingList items={shoppingList} />}`
-- examine if there are any more red squiggly lines in VSCode? 
-
-
-
----
-transition: slide-left
----
-
-# Exercise: Lifting State Up
-Parent-Child communication means having a parent component manage the state, and pass down state setters as props
-
-- see https://unit06-lesson02.netlify.app/4
-- Identify where state needs to located, and where state needs to be lifted up
+- let's add Material UI and/or PrimeReact to websites
 
 ---
 transition: slide-left
@@ -108,8 +112,6 @@ transition: slide-left
 - Use ChatGPT to help you configure your tsconfig.json, tsconfig.app.json, vite.config.ts
 - ❌ BEFORE: Using relative paths can be a pain point, especially when refactoring locations of files/folders
 - ✅ AFTER: should now be able to use `import Component from '@/components/whatever' 
-
-
 
 
 ---
