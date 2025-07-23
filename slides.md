@@ -60,7 +60,7 @@ transition: slide-left
 
 - How did we traditionally style a website via CSS?  What was needed?
 - ChatGPT: `Discuss different ways a React website can be styled with CSS and list pros vs cons for each.`
-- Exercise: Try styling a React app using traditional css way via App.css or index.css
+- Exercise: Re-create https://unit06-lesson02.netlify.app/4 as a React app using traditional css way via App.css or index.css
    - see https://codepen.io/codevilla/pen/YPyWWpm
    
 ---
@@ -70,7 +70,7 @@ transition: slide-left
 # CSS Modules
 
 - Use CSS Modules to scope styles to individual components
-- Exercise: Re-create https://unit06-lesson02.netlify.app/4
+- Exercise: Goto https://primereact.org/button/ and try recreating some of the properties such as `severity`, `rounded`, `outlined`, `size`
 
 ---
 layout: image-right
