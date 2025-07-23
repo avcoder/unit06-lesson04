@@ -107,6 +107,93 @@ transition: slide-left
 transition: slide-left
 ---
 
+# CSS Transitions 
+
+```html
+<div class="fade-box">Hover Me</div>
+<div class="scale-box">Zoom</div>
+```
+
+```css
+.fade-box {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.fade-box:hover {
+  opacity: 1;
+}
+
+.scale-box {
+  transition: transform 0.3s ease;
+}
+
+.scale-box:hover {
+  transform: scale(1.2);
+}
+```
+
+---
+transition: slide-left
+---
+
+# Transition Animations (pg.1)
+
+```jsx
+import React, { useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
+import './App.css';
+
+export default function App() {
+  const [showMessage, setShowMessage] = useState(false);
+
+  return (
+    <div>
+      <button onClick={() => setShowMessage(!showMessage)}>Toggle</button>
+      <CSSTransition
+        in={showMessage}
+        timeout={300}
+        classNames="fade"
+        unmountOnExit
+      >
+        <div className="message">Hello World</div>
+      </CSSTransition>
+    </div>
+  );
+}
+```
+
+---
+transition: slide-left
+---
+
+# Transition Animations (pg.2)
+
+```css
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 300ms, transform 300ms;
+}
+```
+
+---
+transition: slide-left
+---
+
 # Optional: Configure imports to use absolute path
 
 - Use ChatGPT to help you configure your tsconfig.json, tsconfig.app.json, vite.config.ts
