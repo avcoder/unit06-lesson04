@@ -60,7 +60,9 @@ transition: slide-left
 
 - How did we traditionally style a website via CSS?  What was needed?
 - ChatGPT: `Discuss different ways a React website can be styled with CSS and list pros vs cons for each.`
-
+- Exercise: Try styling a React app using traditional css way via App.css or index.css
+   - see https://codepen.io/codevilla/pen/YPyWWpm
+   
 ---
 transition: slide-left
 ---
