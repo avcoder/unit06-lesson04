@@ -209,5 +209,22 @@ transition: slide-left
 
 # Homework
 
-- Finish converting to JSX [Email template layout](https://pure-css.github.io/layouts/email/) to JSX; [Github code here](https://github.com/pure-css/pure/tree/main/site/static/layouts/email)
+- Refactor the weather app we did for our first exercise (see https://codepen.io/codevilla/pen/YPyWWpm) into the following components.  Then separate the css into its respective components that you created.
+Feel free to create more components inside `<Forecast>` as you see fit
+  ```jsx
+  return (
+      <div>
+        <header>
+          <Nav city={this.state.currentCity} onCityChange={this.changeCity} />
+        </header>
+        <main>
+          <TodayWeather
+            city={this.state.currentCity}
+            onCoordsChange={this.changeCoords}
+          />
+          <Forecast lat={this.state.lat} lon={this.state.lon} />
+        </main>
+      </div>
+    );
+  ```
 - Start working on "Weather Forecasting App" assignment due Aug 17 midnight EST
