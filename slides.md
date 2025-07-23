@@ -208,4 +208,4 @@ transition: slide-left
 # Homework
 
 - Finish converting to JSX [Email template layout](https://pure-css.github.io/layouts/email/) to JSX; [Github code here](https://github.com/pure-css/pure/tree/main/site/static/layouts/email)
-- Begin thinking about your "Weather Forecasting App" assignment due Aug 17 midnight EST
+- Start working on "Weather Forecasting App" assignment due Aug 17 midnight EST
